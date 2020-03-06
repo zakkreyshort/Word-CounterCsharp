@@ -1,6 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Counter.Models;
 using System;
+using System.Text;
 using System.Collections.Generic;
 
 namespace Counter.Tests
@@ -28,7 +29,7 @@ namespace Counter.Tests
     public void RemovePunctuation_TakeWordAsStringRemovePunctuation_ReturnString()
     {
       string testInput = "Hello, how are you today?";
-      string goodTest = "Hello, how are you today";
+      string goodTest = "Hello how are you today";
       Assert.AreEqual(goodTest, RepeatCounter.RemovePunctuation(testInput));
     }
   }

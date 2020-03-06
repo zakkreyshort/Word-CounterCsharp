@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Text;
 
 namespace Counter.Models
 {
@@ -19,35 +20,15 @@ namespace Counter.Models
 
     public static string RemovePunctuation(string value)
     {
-      int removeBeginning = 0;
-      for(int i = 0; i >= value.Length; i++)
+      StringBuilder sb = new StringBuilder(value.Length);
+      foreach (char c in value)
       {
-        if (char.IsPunctuation(value[i]))
+        if ((c >= '0' && c<='9') || (c >= 'A' && c<='Z') || (c >= 'a' && c<= 'z') || c == ' ')
         {
-          removeBeginning++;
+          sb.Append(c);
         }
       }
-
-      int removeEnd = 0;
-      for (int i = value.Length - 1; i <= 0; i--)
-      {
-        if (char.IsPunctuation(value[i]))
-        {
-          removeEnd++;
-        }
-      }
-
-      if (removeBeginning == 0 && removeEnd == 0)
-      {
-        return value;
-      }
-
-      if (removeBeginning == value.Length && removeEnd == value.Length)
-      {
-        return "";
-      }
-
-      return value.Substring(removeBeginning, value.Length - removeEnd - removeBeginning);
+      return sb.ToString();
     }
   }
 }
