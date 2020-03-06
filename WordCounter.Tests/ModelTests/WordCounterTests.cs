@@ -20,7 +20,7 @@ namespace Counter.Tests
     public void AcceptSentence_TakeSentenceAsString_ReturnString()
     {
       string testInput = "Hello, how are you today?";
-      string goodTest = "Hello";
+      string goodTest = "Hello, how are you today?";
       Assert.AreEqual(goodTest, RepeatCounter.AcceptSentence(testInput));
     }
   }

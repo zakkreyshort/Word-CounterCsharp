@@ -14,7 +14,7 @@ namespace Counter.Models
     public static string AcceptSentence(string sentence)
     {
       string userInput = sentence;
-      return "mello";
+      return userInput;
     }
   }
 }
