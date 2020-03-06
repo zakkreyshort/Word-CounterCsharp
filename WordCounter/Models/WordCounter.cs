@@ -33,7 +33,17 @@ namespace Counter.Models
 
     public static int CompareWord(string word, string sentence)
     {
+      string wordToCompare = AcceptWord(word).ToLower();
+      string sentenceToCompare = AcceptSentence(sentence).ToLower();
+      string sentenceRemovePunct = RemovePunctuation(sentenceToCompare);
+      int wordCounter = 0;
       
+      foreach (wordToCompare words in sentenceRemovePunct)
+      {
+        wordCounter++;
+      }
+
+      return wordCounter;
     }
   }
 }
