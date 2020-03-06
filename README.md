@@ -13,6 +13,7 @@ _This application counts a user inputted word and sentence then states the numbe
 | ------------- |:-------------:| -------------------:|
 | a word is entered into console | "hello" | "hello" |
 | a sentence is entered | "hello there my friend, hello." | "Sentence" |
+| punctuation of the sentence is removed | Hi, how, .. are you? | Hi how are you |
 | cosole checks to see how many instances of word appear | check: "hello" | output: 2 |
 
 ## Setup/Installation Requirements
