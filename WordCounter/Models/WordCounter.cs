@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Linq;
 
 namespace Counter.Models
 {
@@ -37,13 +38,8 @@ namespace Counter.Models
       string sentenceToCompare = AcceptSentence(sentence).ToLower();
       string sentenceRemovePunct = RemovePunctuation(sentenceToCompare);
       int wordCounter = 0;
-      
-      foreach (wordToCompare words in sentenceRemovePunct)
-      {
-        wordCounter++;
-      }
 
-      return wordCounter;
+
     }
   }
 }

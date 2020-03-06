@@ -39,7 +39,7 @@ namespace Counter.Tests
       string testInput = "Hello Hello Hello?";
       string testWord = "Hello";
       int goodTestNumber = 3;
-      Assert.AreEqual(goodTestNumber, RepeatCounter.CompareWord(testInput));
+      Assert.AreEqual(goodTestNumber, RepeatCounter.CompareWord(testWord, testInput));
     }
 
   }
