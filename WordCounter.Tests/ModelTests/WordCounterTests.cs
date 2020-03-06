@@ -6,12 +6,14 @@ using System.Collections.Generic;
 namespace Counter.Tests
 {
   [TestClass]
-  public class MakeFilesTests
+  public class CounterTests
   {
     [TestMethod]
-    public void MethodName_WhatItDoes_ReturnObject()
+    public void AcceptWord_TakeWordAsString_ReturnString()
     {
-
+      string testOutput = "Hello";
+      string goodTest = "Hello";
+      Assert.AreEqual(goodTest, RepeatCounter.AcceptWord(testOutput));
     }
 
   }
