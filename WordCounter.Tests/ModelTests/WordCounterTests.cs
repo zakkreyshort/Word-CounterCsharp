@@ -38,7 +38,7 @@ namespace Counter.Tests
     {
       string testInput = "Hello there how are you today Hello Hello Hello";
       string testWord = "there";
-      int goodTestNumber = 4;
+      int goodTestNumber = 1;
       Assert.AreEqual(goodTestNumber, RepeatCounter.CompareWord(testWord, testInput));
     }
 
