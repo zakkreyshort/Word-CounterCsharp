@@ -16,7 +16,16 @@ namespace Counter
      string userSentence = Console.ReadLine();
      int finalCount = RepeatCounter.CompareWord(userWord, userSentence);
      Console.WriteLine("Your final count is:" + finalCount);
-     
+     Console.WriteLine("Would you like to try again? [yes] [no]");
+     string doAgain = Console.ReadLine();
+     if (doAgain == "yes")
+     {
+       Main();
+     }
+     else
+     {
+       Console.WriteLine("Goodbye!");
+     }
     }
   }
 }
