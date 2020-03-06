@@ -1,8 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Counter.Models;
 using System;
-using System.Text;
-using System.Collections.Generic;
+
 
 namespace Counter.Tests
 {
@@ -17,8 +16,6 @@ namespace Counter.Tests
       Assert.AreEqual(goodTest, RepeatCounter.AcceptWord(testInput));
     }
 
-
-
     [TestMethod]
     public void AcceptSentence_TakeSentenceAsString_ReturnString()
     {
@@ -26,8 +23,6 @@ namespace Counter.Tests
       string goodTest = "Hello, how are you today?";
       Assert.AreEqual(goodTest, RepeatCounter.AcceptSentence(testInput));
     }
-
-
 
     [TestMethod]
     public void RemovePunctuation_TakeWordAsStringRemovePunctuation_ReturnString()
@@ -37,8 +32,6 @@ namespace Counter.Tests
       Assert.AreEqual(goodTest, RepeatCounter.RemovePunctuation(testInput));
     }
 
-    
-
     [TestMethod]
     public void CompareWord_CountWordInSentence_ReturnNumber()
     {
@@ -47,6 +40,5 @@ namespace Counter.Tests
       int goodTestNumber = 1;
       Assert.AreEqual(goodTestNumber, RepeatCounter.CompareWord(testWord, testInput));
     }
-
   }
 }

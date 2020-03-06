@@ -13,15 +13,11 @@ namespace Counter.Models
       return input;
     }
 
-    
-
     public static string AcceptSentence(string sentence)
     {
       string userInput = sentence;
       return userInput;
     }
-
-
 
     public static string RemovePunctuation(string value)
     {
@@ -35,8 +31,6 @@ namespace Counter.Models
       }
       return sb.ToString();
     }
-
-
 
     public static int CompareWord(string word, string sentence)
     {
