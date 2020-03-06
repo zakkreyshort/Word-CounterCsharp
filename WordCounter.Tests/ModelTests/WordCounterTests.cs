@@ -23,5 +23,13 @@ namespace Counter.Tests
       string goodTest = "Hello, how are you today?";
       Assert.AreEqual(goodTest, RepeatCounter.AcceptSentence(testInput));
     }
+
+    [TestMethod]
+    public void RemovePunctuation_TakeWordAsStringRemovePunctuation_ReturnString()
+    {
+      string testInput = "Hello, how are you today?";
+      string goodTest = "Hello, how are you today";
+      Assert.AreEqual(goodTest, RepeatCounter.RemovePunctuation(testInput));
+    }
   }
 }
