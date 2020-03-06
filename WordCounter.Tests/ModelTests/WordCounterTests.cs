@@ -11,9 +11,9 @@ namespace Counter.Tests
     [TestMethod]
     public void AcceptWord_TakeWordAsString_ReturnString()
     {
-      string testOutput = "Hello";
+      string testInput = "Hello";
       string goodTest = "Hello";
-      Assert.AreEqual(goodTest, RepeatCounter.AcceptWord(testOutput));
+      Assert.AreEqual(goodTest, RepeatCounter.AcceptWord(testInput));
     }
 
   }
