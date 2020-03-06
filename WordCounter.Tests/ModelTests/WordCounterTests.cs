@@ -36,9 +36,9 @@ namespace Counter.Tests
     [TestMethod]
     public void CompareWord_CountWordInSentence_ReturnNumber()
     {
-      string testInput = "Hello Hello Hello?";
-      string testWord = "Hello";
-      int goodTestNumber = 3;
+      string testInput = "Hello there how are you today Hello Hello Hello";
+      string testWord = "there";
+      int goodTestNumber = 4;
       Assert.AreEqual(goodTestNumber, RepeatCounter.CompareWord(testWord, testInput));
     }
 
