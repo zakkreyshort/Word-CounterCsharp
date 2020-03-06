@@ -6,7 +6,13 @@
 
 ## Description
 
-_This application counts a user inputted word and sentence then states the number of times the word appears in a sentence.
+_This application counts a user inputted word and sentence then states the number of times the word appears in a sentence. By;_
+* Taking word and store as string
+* Taking sentence and store as string
+* Remove punctuation and special characters from sentence string using stringbuilder
+* Return the total amount of times the word shows up within the sentence
+* Ask if you would like to go again
+
 ## Specifications:
 
 | Specification | Example Input | Example Output |
@@ -14,7 +20,8 @@ _This application counts a user inputted word and sentence then states the numbe
 | a word is entered into console | "hello" | "hello" |
 | a sentence is entered | "hello there my friend, hello." | "Sentence" |
 | punctuation of the sentence is removed | Hi, how, .. are you? | Hi how are you |
-| cosole checks to see how many instances of word appear | check: "hello" | output: 2 |
+| console checks to see how many instances of word appear | check: "hello" | output: 2 |
+| console asks if you would like to go again | [yes] | _starts over_ |
 
 ## Setup/Installation Requirements
 
