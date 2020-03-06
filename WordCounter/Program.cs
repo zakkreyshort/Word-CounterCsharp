@@ -13,5 +13,4 @@ namespace Counter
      Console.WriteLine();
     }
   }
-
 }
