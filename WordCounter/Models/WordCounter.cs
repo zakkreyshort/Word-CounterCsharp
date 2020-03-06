@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using System.Linq;
+
 
 namespace Counter.Models
 {
@@ -34,12 +34,14 @@ namespace Counter.Models
 
     public static int CompareWord(string word, string sentence)
     {
-      string wordToCompare = AcceptWord(word).ToLower();
-      string sentenceToCompare = AcceptSentence(sentence).ToLower();
+      string wordToCompare = AcceptWord(word);
+      string sentenceToCompare = AcceptSentence(sentence);
       string sentenceRemovePunct = RemovePunctuation(sentenceToCompare);
-      int wordCounter = 0;
+      int num = 0;
+      int posit = 0;
 
-
-    }
+      while ((posit = sentenceRemovePunct.IndexOf(wordToCompare, posit) + 1) != 0) num ++;
+      return num;
+     }
   }
 }
