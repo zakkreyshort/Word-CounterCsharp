@@ -33,6 +33,14 @@ namespace Counter.Tests
       Assert.AreEqual(goodTest, RepeatCounter.RemovePunctuation(testInput));
     }
 
-    
+    [TestMethod]
+    public void CompareWord_CountWordInSentence_ReturnNumber()
+    {
+      string testInput = "Hello Hello Hello?";
+      string testWord = "Hello";
+      int goodTestNumber = 3;
+      Assert.AreEqual(goodTestNumber, RepeatCounter.CompareWord(testInput));
+    }
+
   }
 }

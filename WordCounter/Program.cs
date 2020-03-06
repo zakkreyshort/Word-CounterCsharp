@@ -1,6 +1,3 @@
-// with front end stuffs
-
-
 using System;
 using Counter.Models;
 

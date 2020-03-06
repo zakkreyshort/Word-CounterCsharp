@@ -30,5 +30,10 @@ namespace Counter.Models
       }
       return sb.ToString();
     }
+
+    public static int CompareWord(string word, string sentence)
+    {
+      
+    }
   }
 }
