@@ -1,6 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Counter.Models;
 using System;
+using System.Collections.Generic;
 
 namespace Counter.Tests
 {

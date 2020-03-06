@@ -1,12 +1,13 @@
 using System;
+using System.Collections.Generic;
 
 namespace Counter.Models
 {
-  class Test
+  public class RepeatCounter
   {
-    public static void Temp()
+    public static void CountWord()
     {
-
+      
     }
   }
 

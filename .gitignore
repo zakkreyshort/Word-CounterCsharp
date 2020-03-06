@@ -2,3 +2,4 @@ WordCounter/bin
 WordCounter.Tests/bin 
 WordCounter/obj 
 WordCounter.Tests/obj
+WordCounter/.vscode
