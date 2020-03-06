@@ -16,6 +16,7 @@ namespace Counter
      string userSentence = Console.ReadLine();
      int finalCount = RepeatCounter.CompareWord(userWord, userSentence);
      Console.WriteLine("Your final count is:" + finalCount);
+     
     }
   }
 }
