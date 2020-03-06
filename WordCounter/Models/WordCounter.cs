@@ -10,5 +10,11 @@ namespace Counter.Models
       string input = word;
       return input;
     }
+
+    public static string AcceptSentence(string sentence)
+    {
+      string userInput = sentence;
+      return "mello";
+    }
   }
 }
