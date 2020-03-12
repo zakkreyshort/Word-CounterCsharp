@@ -8,15 +8,17 @@ namespace Counter.Models
   {
     public static string AcceptWord(string word)
     {
-      string input = word;
-      return input;
+      return word;
     }
 
     public static string AcceptSentence(string sentence)
     {
-      string userInput = sentence;
-      return userInput;
+      return sentence;
     }
+
+
+
+
 
 		public static string RemovePunctuation(string value)
 		{
@@ -36,10 +38,16 @@ namespace Counter.Models
 		string wordToCompare = AcceptWord(word);
 		string sentenceToCompare = AcceptSentence(sentence);
 		string sentenceRemovePunct = RemovePunctuation(sentenceToCompare);
+		string [] compareSentence = sentenceRemovePunct.Split(' ');
 		int num = 0;
-		int posit = 0;
-
-		while ((posit = sentenceRemovePunct.IndexOf(wordToCompare, posit) + 1) != 0) num ++;
+	
+		for (int i = 0; i < compareSentence.Length; i++)
+		{
+			if (compareSentence[i] == wordToCompare)
+			{
+				num++;
+			}
+		}
 		return num;
 		}
   }
