@@ -17,11 +17,11 @@ _This application counts a user inputted word and sentence then states the numbe
 
 | Specification | Example Input | Example Output |
 | ------------- |:-------------:| -------------------:|
-| a word is entered into console | "hello" | "hello" |
-| a sentence is entered | "hello there my friend, hello." | "Sentence" |
-| punctuation of the sentence is removed | Hi, how, .. are you? | Hi how are you |
-| console checks to see how many instances of word appear | check: "hello" | output: 2 |
-| console asks if you would like to go again | [yes] | _starts over_ |
+| a word is entered into console | RepeatCounter.AcceptWord("Input") | "Input" |
+| a sentence is entered | RepeatCounter.AcceptSentence("This is an example sentence") | "This is an example sentence" |
+| punctuation of the sentence is removed | RepeatCounter.RemovePunctuation("This! is, an ;example ?sentence") | "This is an example sentence" |
+| console checks to see how many instances of word appear in sentence | RepeatCounter.CompareWord("hello", "hello, this is! hello HEllo jello, mello hello") | return 2 instances of "hello" |
+| console ignores if word is within word | RepeatCounter.CompareWord("hello", "hello, mahalla mhellos to say hello to yous.") | return 2 instances of hello |
 
 ## Setup/Installation Requirements
 
