@@ -16,10 +16,6 @@ namespace Counter.Models
       return sentence;
     }
 
-
-
-
-
 		public static string RemovePunctuation(string value)
 		{
 			StringBuilder sb = new StringBuilder(value.Length);
